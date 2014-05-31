@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="/stylesheets/stylesheet.css" type="text/css" />
+<title>36资讯集</title>
+</head>
+
+<body>
+	<div class="logo center"><a href="/">36资讯集</a></div>
+	<div class="content center box">
+		<div class="title"><h1>文章列表</h1></div>
+		<div class="body">
+            <ul>
+			{% for post in site.posts %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+            </ul>
+		</div>
+	</div>
+</body>
+</html>
